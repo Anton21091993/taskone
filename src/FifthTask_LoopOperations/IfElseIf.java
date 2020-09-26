@@ -15,8 +15,8 @@ public class IfElseIf {
 
         if (name1 == "Анастасия")
         {
-
-            System.out.println("Я тебя так долго ждал");
+Dsfsdfsdf
+            System.out.println("Я тебяdfdf так долго ждал");
         }
         else if (name2 =="Вася")
         {
