@@ -1,6 +1,10 @@
 package ThirdHomeWork;
 
-public class CalculatorWithOperator {
+public class CalculatorWithCounter {
+
+    CalculatorWithOperator calcaWithOp = new CalculatorWithOperator();
+    CalculatorWithMathCopy calcaWithMath = new CalculatorWithMathCopy();
+    CalculatorWithMathExtends calcaWithMthE = new CalculatorWithMathExtends();
 
 
     public double division(double a, double b) {
@@ -44,6 +48,9 @@ public class CalculatorWithOperator {
         return Math.sqrt(a);
     }
 
+    public void getCountOperation() {
+        return;
+    }
+
+
 }
-
-

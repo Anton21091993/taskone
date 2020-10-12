@@ -1,49 +1,38 @@
 package ThirdHomeWork;
 
-public class CalculatorWithOperator {
-
-
+public class CalculatorWithMemory implements ICalculator {
+    @Override
     public double division(double a, double b) {
-        return a / b;
-
+        return 0;
     }
 
+    @Override
     public double multiplying(double a, double b) {
-        return a * b;
-
+        return 0;
     }
 
+    @Override
     public double minus(double a, double b) {
-        return a - b;
-
+        return 0;
     }
 
+    @Override
     public double sum(double a, double b) {
-        return a + b;
-
+        return 0;
     }
 
+    @Override
     public double module(double c) {
-
-
-        return (c >= 0) ? c : -c;
-
-
+        return 0;
     }
 
-
+    @Override
     public double stepen(double d, int e) {
-        for (int i = 0; i < e; i++) {
-            if ((i > 0)) ;
-            d = d * d;
-        }
-        return d;
+        return 0;
     }
 
+    @Override
     public double sqrtSomething(double a) {
-        return Math.sqrt(a);
+        return 0;
     }
-
 }
-
-
