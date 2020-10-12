@@ -1,14 +1,14 @@
 package ThirdHomeWork;
 
-public class CalculatorWithOperator {
+public class CalculatorWithMathCopy {
 
 
-    public double division(double a, double b) {
+    public double division2(double a, double b) {
         return a / b;
 
     }
 
-    public double multiplying(double a, double b) {
+    public double multiplying2(double a, double b) {
         return a * b;
 
     }
@@ -26,7 +26,7 @@ public class CalculatorWithOperator {
     public double module(double c) {
 
 
-        return Math.abs(c);
+        return (c >= 0) ? c : -c;
 
 
     }
@@ -42,7 +42,4 @@ public class CalculatorWithOperator {
     public double sqrtSomething(double a) {
         return Math.sqrt(a);
     }
-
 }
-
-

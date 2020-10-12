@@ -22,16 +22,18 @@ public class CalculatorWithMathExtends extends CalculatorWithOperator{
         return super.sum(a, b);
     }
 
-    public double getModule()
-    {
-        return 2.0;
+    @Override
+    public double module(double c) {
+        return super.module(c);
     }
 
-    public double getKoren()
-    {
-
-        return 4.0;
-
+    @Override
+    public double stepen(double d, int e) {
+        return super.stepen(d, e);
     }
 
+    @Override
+    public double sqrtSomething(double a) {
+        return super.sqrtSomething(a);
+    }
 }
