@@ -31,9 +31,17 @@ public class CalculatorWithMathOperator {
 
     }
 
-  /*  public double stepen (int d, int e){
-        //for ()
-    }*/
+    public double stepen(double a1, int b1) {
+
+        if (a1 > 0 && b1 > 0) {
+            for (int i = 1; i < b1; i++) {
+                a1 = a1 * a1;
+            }
+        }
+
+
+        return a1;
+    }
 
    public double koren(int d, int e){
         return Math.sqrt(e);

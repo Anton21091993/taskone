@@ -1,39 +1,38 @@
 package ThirdHomeWork;
 
-public class CalculatorWithMathExtends extends CalculatorWithOperator{
-
+public class CalculatorWIthCounterDecorator  implements ICalculator{
     @Override
     public double division(double a, double b) {
-        return super.division(a, b);
+        return 0;
     }
 
     @Override
     public double multiplying(double a, double b) {
-        return super.multiplying(a, b);
+        return 0;
     }
 
     @Override
     public double minus(double a, double b) {
-        return super.minus(a, b);
+        return 0;
     }
 
     @Override
     public double sum(double a, double b) {
-        return super.sum(a, b);
+        return 0;
     }
 
     @Override
     public double module(double c) {
-        return super.module(c);
+        return 0;
     }
 
     @Override
-    public double stepen(double a1, int b1) {
-        return super.stepen(a1, b1);
+    public double stepen(double d, int e) {
+        return 0;
     }
 
     @Override
     public double sqrtSomething(double a) {
-        return super.sqrtSomething(a);
+        return 0;
     }
 }

@@ -1,6 +1,6 @@
 package ThirdHomeWork;
 
-public class CalculatorWithCounter {
+public class CalculatorWithCounter implements  ICalculator {
 
     CalculatorWithOperator calcaWithOp = new CalculatorWithOperator();
     CalculatorWithMathCopy calcaWithMath = new CalculatorWithMathCopy();
@@ -36,12 +36,16 @@ public class CalculatorWithCounter {
     }
 
 
-    public double stepen(double d, int e) {
-        for (int i = 0; i < e; i++) {
-            if ((i > 0)) ;
-            d = d * d;
+    public double stepen(double a1, int b1) {
+
+        if (a1 > 0 && b1 > 0) {
+            for (int i = 1; i < b1; i++) {
+                a1 = a1 * a1;
+            }
         }
-        return d;
+
+
+        return a1;
     }
 
     public double sqrtSomething(double a) {

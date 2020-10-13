@@ -1,6 +1,6 @@
 package ThirdHomeWork;
 
-public class CalculatorWithMathCopy {
+public class CalculatorWithMathCopy implements  ICalculator {
 
 
     public double division2(double a, double b) {
@@ -11,6 +11,16 @@ public class CalculatorWithMathCopy {
     public double multiplying2(double a, double b) {
         return a * b;
 
+    }
+
+    @Override
+    public double division(double a, double b) {
+        return 0;
+    }
+
+    @Override
+    public double multiplying(double a, double b) {
+        return 0;
     }
 
     public double minus(double a, double b) {
@@ -31,12 +41,16 @@ public class CalculatorWithMathCopy {
 
     }
 
-    public double stepen(double d, int e) {
-        for (int i = 0; i < e; i++) {
-            if ((i > 0)) ;
-            d = d * d;
+    public double stepen(double a1, int b1) {
+
+        if (a1 > 0 && b1 > 0) {
+            for (int i = 1; i < b1; i++) {
+                a1 = a1 * a1;
+            }
         }
-        return d;
+
+
+        return a1;
     }
 
     public double sqrtSomething(double a) {
