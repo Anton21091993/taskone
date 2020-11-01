@@ -5,6 +5,8 @@
         T[] data = (T[]) new Object[3];
 
 
+
+
         public int add(T item) {
             for (int i = 0; i < data.length; i++) {
                 data[i] = item;

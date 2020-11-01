@@ -7,7 +7,7 @@ public class DataContainerMain {
         int b = myData.add(null);
         int c = myData.add(45);
         int d = myData.add(null);
-        System.out.println(myData.print()); ;
+      //  System.out.println(myData.print()); ;
     }
 
 
