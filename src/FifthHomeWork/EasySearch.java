@@ -3,25 +3,24 @@ package FifthHomeWork;
 public class EasySearch  implements ISearchEngine {
 
     @Override
-    public long search(String text, String word, boolean isCaseSensitive) {
-        int count = 0;
-        int index = -1 * word.length();
+    public long search(String text, String word) {
+        String textLC = text.toLowerCase();
 
-        if (!isCaseSensitive) {
-            text = text.toLowerCase();
-            word = word.toLowerCase();
-        }
 
-        do {
-            if ((index = text.indexOf(word, index + word.length())) >= 0
-                    && (index == 0 || !Character.isLetter(text.charAt(index - 1)))
-                    && (index + word.length() >= text.length()
-                    || !Character.isLetter(text.charAt(index + word.length())))) {
+        long count = 0;
+        int index = 0;
+
+        while (index != -1) {
+            index = textLC.indexOf(word,index);
+            if (index != -1) {
                 count++;
+                index++;
             }
-        } while (index >= 0);
 
+        }
         return count;
+
     }
+
 }
 
