@@ -80,5 +80,7 @@ public abstract class SiteLoader {
      * @return курс который мы нашли
      */
     protected abstract double handle(String content, SiteLoader.Currency currencyName);
+
+
 }
 

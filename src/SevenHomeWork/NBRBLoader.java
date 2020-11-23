@@ -1,6 +1,10 @@
 package SevenHomeWork;
 
 
+import java.io.FileWriter;
+import java.io.IOError;
+import java.io.IOException;
+
 public class NBRBLoader extends SiteLoader{
 
     /**
@@ -22,6 +26,14 @@ public class NBRBLoader extends SiteLoader{
     @Override
     protected double handle(String content, SiteLoader.Currency currencyName) {
 
+public int indexOf(String content, String currencyName)
         return 0;
+    }
+    try{
+        FileWriter writer = new FileWriter("notes.txt", false))
+        catch(IOException ex){
+            System.out.println(ex.getMessage);
+        }
+
     }
 }
